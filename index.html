@@ -20,6 +20,7 @@
             </h1>
             <p>Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong></p>
         </header>
+
         <section id="sobre">
             <h2>Sobre Mim</h2>
             <p>Sou uma estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> apaixonada por tecnologia e
@@ -30,40 +31,50 @@
                 ambiente colaborativo.
             </p>
         </section>
+
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-            </ul>
+            <div class="habilidades-grid">
+                <div class="habilidade-card">HTML</div>
+                <div class="habilidade-card">CSS</div>
+                <div class="habilidade-card">JavaScript</div>
+                <div class="habilidade-card">Python</div>
+                <div class="habilidade-card">SQL</div>
+            </div>
         </section>
+
         <button id="botao">Mostrar Mais</button>
+
         <div id="mais" style="display:none;">
             <section id="projetos">
                 <h2>Projetos</h2>
                 <ul>
-                    <li>
-                        <a
-                         target="_blank"
-                         href="https://github.com/Carinepl/calculadora">
+                    <a target="_blank" href="https://github.com/Carinepl/portifolio">
+                        <li>
+                            Portifólio feito com <strong>HTML, CSS e JavaScript</strong>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/Carinepl/calculadora">
+                        <li>
                             Calculadora feita em <strong>Python</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                         target="_blank"
-                         href="https://github.com/Carinepl/calculadora">
-                            Calculadora feita em <strong>Python</strong>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/Carinepl/comandos_sql">
+                        <li>
+                            Scripts feitos em <strong>SQL</strong>
+                        </li>
+                    </a>
+                    <a target="_blank" href="https://github.com/Carinepl/gestor-de-usuarios">
+                        <li>
+                            Projeto feito em <strong>Python</strong> usando o banco em memória <strong>SQLite</strong>
+                        </li>
+                    </a>
                 </ul>
             </section>
         </div>
+
         <footer>
-            <p>&copy; 2024 Meu Nome</p>
+            <p>&copy; 2024 Ana Carine Pereira Lima</p>
         </footer>
     </div>
     <script src="script.js"></script>
