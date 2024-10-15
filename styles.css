@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Azul claro */
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -14,16 +14,16 @@ body {
     max-width: 800px;
     padding: 30px;
     background: white;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    max-height: 80vh; /* Altura máxima para o contêiner */
-    overflow-y: auto; /* Habilita a barra de rolagem */
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    color: #2c3e50; /* Azul escuro */
+    color: #2c3e50;
 }
 
 h1 {
@@ -33,9 +33,9 @@ h1 {
 }
 
 h2 {
-    color: #2980b9; /* Azul vibrante */
+    color: #2980b9;
     margin-top: 20px;
-    border-bottom: 2px solid #2980b9; /* Linha embaixo do título */
+    border-bottom: 2px solid #2980b9;
     padding-bottom: 5px;
 }
 
@@ -45,43 +45,62 @@ ul {
 }
 
 li {
-    background: #ecf0f1; /* Cinza claro */
+    background: #ecf0f1;
     margin: 10px 0;
     padding: 15px;
-    border-left: 5px solid #2980b9; /* Linha à esquerda */
+    border-left: 5px solid #2980b9;
     transition: transform 0.3s;
 }
 
 li:hover {
-    transform: translateX(5px); /* Efeito de hover */
+    transform: translateX(5px);
 }
 
 button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background: #27ae60; /* Verde vibrante */
+    background: #27ae60;
     color: white;
     border: none;
-    border-radius: 5px; /* Bordas arredondadas no botão */
+    border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s; /* Transição suave */
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background: #219653; /* Verde mais escuro no hover */
-    transform: translateY(-2px); /* Efeito de elevação */
+    background: #219653;
+    transform: translateY(-2px);
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 0.9em;
-    color: #7f8c8d; /* Cinza escuro */
+    color: #7f8c8d;
 }
 
-/* Responsividade */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.habilidade-card {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #2980b9;
+    transition: transform 0.3s;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px);
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 15px;
